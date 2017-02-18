@@ -1,0 +1,32 @@
+{
+  "name": "gulp-critical-injector",
+  "version": "0.1.0",
+  "description": "Gulp wrapper for critical-injector module",
+  "main": "index.js",
+  "author": "Mateusz Popielarz <mateusz.popielarz@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint index.js test/test.js && jscs index.js test/test.js",
+    "pretest": "npm run lint",
+    "test": "mocha --reporter spec"
+  },
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">= 4.0"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-gulp": "^2.1.0",
+    "gulp": "^3.9.1",
+    "jscs": "^3.0.7",
+    "jscs-preset-gulp": "^1.0.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "critical-injector": "^0.1.0",
+    "gulp-util": "^3.0.8",
+    "through2": "^2.0.3"
+  }
+}
