@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "Mateusz Popielarz <mateusz.popielarz@gmail.com>",
   "license": "MIT",
+  "repository": "matpoppl/gulp-critical-injector",
   "scripts": {
     "lint": "eslint index.js test/test.js && jscs index.js test/test.js",
     "pretest": "npm run lint",
