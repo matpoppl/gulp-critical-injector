@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Gulp wrapper for critical-injector module",
   "main": "index.js",
-  "author": "Mateusz Popielarz <mateusz.popielarz@gmail.com>",
+  "author": "matpoppl <matpop@interpc.pl>",
   "license": "MIT",
   "repository": "matpoppl/gulp-critical-injector",
   "scripts": {
@@ -35,7 +35,7 @@
     "mocha": "^3.2.0"
   },
   "dependencies": {
-    "critical-injector": "^0.1.0",
+    "critical-injector": "^0.2.0",
     "gulp-util": "^3.0.8",
     "through2": "^2.0.3"
   }

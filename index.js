@@ -3,7 +3,6 @@
 const through = require('through2');
 const PluginError = require('gulp-util').PluginError;
 const injector = require('critical-injector');
-
 const PLUGIN_NAME = 'gulp-critical-injector';
 
 module.exports = function(options) {

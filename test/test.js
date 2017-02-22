@@ -1,7 +1,9 @@
-const injector = require('../');
+'use strict';
+
 const gulp = require('gulp');
 const fs = require('fs');
 const assert = require('assert');
+const injector = require('../');
 
 describe('gulp-critical-injector', function() {
 
