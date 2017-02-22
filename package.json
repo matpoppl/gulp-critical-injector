@@ -1,6 +1,6 @@
 {
   "name": "gulp-critical-injector",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Gulp wrapper for critical-injector module",
   "main": "index.js",
   "author": "matpoppl <matpop@interpc.pl>",
