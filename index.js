@@ -1,7 +1,7 @@
 'use strict';
 
 const through = require('through2');
-const PluginError = require('gulp-util').PluginError;
+const PluginError = require('plugin-error');
 const injector = require('critical-injector');
 const PLUGIN_NAME = 'gulp-critical-injector';
 
@@ -16,10 +16,10 @@ module.exports = function(options) {
     }
 
     if (file.isStream()) {
-      this.emit('error', new PluginError(
-          PLUGIN_NAME,
-          'Streams not supported!'
-        )
+      this.emit('error', new PluginError({
+          plugin: PLUGIN_NAME,
+          message: 'Streams not supported!',
+        })
       );
     } else if (file.isBuffer()) {
 
