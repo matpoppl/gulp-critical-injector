@@ -16,22 +16,17 @@ module.exports = function(options) {
     }
 
     if (file.isStream()) {
-      this.emit('error', new PluginError({
-          plugin: PLUGIN_NAME,
-          message: 'Streams not supported!',
-        })
-      );
-    } else if (file.isBuffer()) {
-
-      file.contents = Buffer.from(
-        injector(
-          file.contents.toString('utf8'),
-          options
-        ),
-        'utf8'
-      );
-
-      return callback(null, file);
+      return callback(new PluginError(PLUGIN_NAME, 'Streaming not supported'));
     }
+
+    file.contents = Buffer.from(
+      injector(
+        file.contents.toString('utf8'),
+        options
+      ),
+      'utf8'
+    );
+
+    return callback(null, file);
   });
 };
